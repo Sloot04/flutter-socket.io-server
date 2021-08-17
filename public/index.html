@@ -18,7 +18,7 @@
             console.log('Perdimos conección');
         });
         socket.emit('mensaje', {nombre: 'Fernando'});
-        socket.on('mensaje', function(payload){
+        socket.on('nuevo-mensaje', function(payload){
             console.log('Escuchando:', payload);
         });
     </script>

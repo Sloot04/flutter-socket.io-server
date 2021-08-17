@@ -10,10 +10,6 @@ const server = require('http').createServer(app);
 module.exports.io = require('socket.io')(server);
 require('./sockets/socket');
 
-
-
-
-
 //Path público
 const publicPath = path.resolve(__dirname, 'public');
 
